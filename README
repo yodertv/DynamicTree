@@ -1,11 +1,14 @@
 DynamicTree.log v1.2
 
 New in release 1.1
+
 - Draw trees based on Fractal book algorithms
 - Added input
+- Comments contain named catalog of interesting tree settings.
 
 
-New in release 1.2:
+New in release 1.2
+
 - Tried repeat variable - somewhat interesting and removed it
 - Used setInterval and animated the drawing of trees
 - Fixed bug that factors were not recalculated when the varibles changed
@@ -14,6 +17,7 @@ New in release 1.2:
 
 
 Backlog:
+
 - Add seperate Alpha variable for left, right, width, and length
 - Use ng-slider for variable control
 - Save as button to export tree
