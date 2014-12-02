@@ -43,7 +43,7 @@ function TreeCtrl($scope){
 		$scope.leftWidthFactor = Math.pow(2, -1/$scope.treeVars.leftAlpha);
 		$scope.rightWidthFactor = Math.pow(2, -1/$scope.treeVars.rightAlpha);
 		$scope.leftLenghtFactor = Math.pow(2, -2/(3*$scope.treeVars.leftAlpha));
-		$scope.rightLengthFactor = Math.pow(2, -2/(3*$scope.treeVars.right12Alpha)); // For expected tree
+		$scope.rightLengthFactor = Math.pow(2, -2/(3*$scope.treeVars.rightAlpha)); // For expected tree
 	//	$scope.rightLengthFactor = Math.pow(2, -2/(3*$scope.treeVars.leftAlpha)); // For goofy tree
 	}
 
