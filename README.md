@@ -1,6 +1,14 @@
 Dynamic Tree
 ============
 
+
+##New in release 1.3
+- Added title
+- Added version number
+- Use ng-slider for variable control. Relearned ng and js challenges when things don't work. Why a number gets treated as text later in the code was struggle. Discovered a Tanglewood tree by concating 31 to 90 instead of addeding.
+- Got sliders in a div on the left
+- Debug lines in both html and js.
+
 ##New in release 1.2
 
 - Tried repeat variable - somewhat interesting and removed it
@@ -32,6 +40,10 @@ Goofy*		| -90			| 236 	| 45 	| 1.2 		| 2.4   		| 48		| 85		| 12
 
 ##Backlog:
 
+- Dynamically clear and draw trees. E.g., add clear and redraw to slider value set event
 - Add seperate Alpha variable for left, right, width, and length
-- Use ng-slider for variable control
+- Use ng-slider for variable input
+- Add seperate left and right Alpha variable for each of angle, width, and length. This allows goofy tree by input.
 - Save as button to export tree
+- Work on mobile browser
+- Package and deliver by email
