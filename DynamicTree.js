@@ -28,7 +28,7 @@ function TreeCtrl($scope){
 	$scope.treeVars = [
 		{text: "Lean", value: "-90", options : { from: -180, to: 0, step: 5, dimension: " lean" }}, // Initial angle of the trunk
 		{text: "Length", value: "135", options : { from: 10, to: 250, step: 10, dimension: " length" }}, // Length of the first stem
-		{text: "Width", value: "17", options : { from: 0, to: 99, step: 2, dimension: " width"  }}, // Width of the first stem
+		{text: "Width", value: "17", options : { from: 0, to: 60, step: 1, dimension: " width"  }}, // Width of the first stem
 		{text: "LeftAlpha", value: "180", options : { from: 5, to: 595, step: 5, dimension: " leftAlpha"  }}, // change ratio for leftside of tree
 		{text: "RightAlpha", value: "220", options : { from: 5, to: 595, step: 5, dimension: " rightAlpha"  }}, // change ratio for leftside of tree
 		{text: "LeftAngle", value: "19", options : { from: 5, to: 90, step: 2, dimension: " leftAngle"  }}, // Left branch angle delta
