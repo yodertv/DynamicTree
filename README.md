@@ -3,9 +3,9 @@ Dynamic Tree
 
 Credit to Roger T. Stevens "Fractal Programming in C", 1989 M&T Books, Redwood City, CA.
 
-Dynamic Tree draws and clears a fractal based tree as configured by 8 variables that can be input using sliders.
+[DynamicTree](http://yodertv.github.io/) draws and clears a fractal based tree on a canvas as configured by 8 variables that can be input using sliders.
 
-Uses angularjs and ng-slider.
+Uses angularjs and ng-slider. 
 
 ##New in release 1.3
 - Added title
@@ -26,17 +26,17 @@ Uses angularjs and ng-slider.
 
 ##Here are some examples of interesting inputs:
 
-tree		| initilAngle	| length| width	| leftAlpha	| rightAlpha	| leftAngle	| rightAngle| level
-----		| -----------	| ------| -----	| ---------	| ----------	| ---------	| ----------| -----
-Square		| -90			| 250 	| 35 	| 1.2 		| 1.2   		| 90		| 90 		| 12
-Symetrical 	| -90 			| 180 	| 21 	| 1.2 		| 1.2   		| 25		| 25 		| 12
-Foilage		| -82			| 135 	| 13 	| 1.8 		| 2.2   		| 19 		| 31 		| 16
-Bronchial	| -90 			| 90  	| 10 	| 3.0 		| 3.0   		| 33 		| 33 		| 10
-Goofy*		| -90			| 236 	| 45 	| 1.2 		| 2.4   		| 48		| 85		| 12
-One-sided	| -82			| 135	| 17 	| 1.8 		| 2.2 			| 0			| 31		| 12
-Leaf		| -82			| 155	| 10 	| 1.8 		| 2.2 			| 15 		| 65		| 16
-Shoot		| -95			| 150 	| 12 	| 1.8 		| 0.1 			| 30 		| 0 		| 16
-Lucky Bamboo| -95			| 150 	| 12 	| 1.8 		| 0.25 			| 30 		| 0 		| 16
+tree		| initAngle	| length| width	| leftAlpha	| rightAlpha| leftAngle	| rightAngle| level
+----		| ---------	| ------| -----	| ---------	| ----------| ---------	| ----------| -----
+Square		| -90		| 250 	| 35 	| 1.2 		| 1.2   	| 90		| 90 		| 12
+Symetrical 	| -90 		| 180 	| 21 	| 1.2 		| 1.2   	| 25		| 25 		| 12
+Foilage		| -82		| 135 	| 13 	| 1.8 		| 2.2   	| 19 		| 31 		| 16
+Bronchial	| -90 		| 90  	| 10 	| 3.0 		| 3.0   	| 33 		| 33 		| 10
+Goofy*		| -90		| 236 	| 45 	| 1.2 		| 2.4   	| 48		| 85		| 12
+One-sided	| -82		| 135	| 17 	| 1.8 		| 2.2 		| 0			| 31		| 12
+Leaf		| -82		| 155	| 10 	| 1.8 		| 2.2 		| 15 		| 65		| 16
+Shoot		| -95		| 150 	| 12 	| 1.8 		| 0.1 		| 30 		| 0 		| 16
+Lucky Bamboo| -95		| 150 	| 12 	| 1.8 		| 0.25 		| 30 		| 0 		| 16
 
 *and set rightLengthFactor equal to the leftAlpha
 
