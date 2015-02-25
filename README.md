@@ -5,24 +5,9 @@ Credit to Roger T. Stevens "Fractal Programming in C", 1989 M&T Books, Redwood C
 
 [DynamicTree](http://yodertv.github.io/) draws and clears a fractal based tree on a canvas as configured by 8 variables that can be input using sliders.
 
-Uses angularjs and ng-slider. 
+Uses angularjs and ng-slider.
 
-##New in release 1.3
-- Added title
-- Added version number
-- Use ng-slider for variable control. Relearned ng and js challenges when things don't work. Why a number gets treated as text later in the code was struggle. Discovered a Tanglewood tree by concating 31 to 90 instead of addeding.
-- Got sliders in a div on the left
-- Debug lines in both html and js.
-
-##New in release 1.2
-
-- Tried repeat variable - somewhat interesting and removed it
-- Used setInterval and animated the drawing of trees
-- Fixed bug that factors were not recalculated when the varibles changed
-- Fixed bug where left and righ length factors were the same. Discovered Goofy tree. To recreate the bug must be put back.
-- Display factors for debugging.
-- Changed to markdown for readme.
-
+![alt text](DynamicTree.png "Dynamic Tree")
 
 ##Here are some examples of interesting inputs:
 
@@ -39,6 +24,25 @@ Shoot		| -95		| 150 	| 12 	| 1.8 		| 0.1 		| 30 		| 0 		| 16
 Lucky Bamboo| -95		| 150 	| 12 	| 1.8 		| 0.25 		| 30 		| 0 		| 16
 
 *and set rightLengthFactor equal to the leftAlpha
+
+##Demo
+Try it out [here](http://yodertv.github.io/).
+
+##New in release 1.3
+- Added title
+- Added version number
+- Use ng-slider for variable control. Relearned ng and js challenges when things don't work. Why a number gets treated as text later in the code was struggle. Discovered a Tanglewood tree by concating 31 to 90 instead of addeding.
+- Got sliders in a div on the left
+- Debug lines in both html and js.
+
+##New in release 1.2
+
+- Tried repeat variable - somewhat interesting and removed it
+- Used setInterval and animated the drawing of trees
+- Fixed bug that factors were not recalculated when the varibles changed
+- Fixed bug where left and righ length factors were the same. Discovered Goofy tree. To recreate the bug must be put back.
+- Display factors for debugging.
+- Changed to markdown for readme.
 
 ##New in release 1.1
 
