@@ -1,6 +1,11 @@
 Dynamic Tree
 ============
 
+Credit to Roger T. Stevens "Fractal Programming in C", 1989 M&T Books, Redwood City, CA.
+
+Dynamic Tree draws and clears a fractal based tree as configured by 8 variables that can be input using sliders.
+
+Uses angularjs and ng-slider.
 
 ##New in release 1.3
 - Added title
