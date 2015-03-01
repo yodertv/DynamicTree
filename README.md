@@ -14,12 +14,12 @@ Uses angularjs and ng-slider.
 tree		| initAngle	| length| width	| leftAlpha	| rightAlpha| leftAngle	| rightAngle| level
 ----		| ---------	| ------| -----	| ---------	| ----------| ---------	| ----------| -----
 Square		| -90		| 250 	| 35 	| 1.2 		| 1.2   	| 90		| 90 		| 12
-Symetrical 	| -90 		| 180 	| 21 	| 1.2 		| 1.2   	| 25		| 25 		| 12
+Symetrical 	| -90 		| 180 	| 26	| 1.2 		| 1.2   	| 25		| 25 		| 12
 Foilage		| -82		| 135 	| 13 	| 1.8 		| 2.2   	| 19 		| 31 		| 16
 Bronchial	| -90 		| 90  	| 10 	| 3.0 		| 3.0   	| 33 		| 33 		| 10
 Mid Values	| -90		| 125	| 50	| 3.0		| 3.0 		| 46		| 46		| 9
 Goofy*		| -90		| 236 	| 45 	| 1.2 		| 2.4   	| 48		| 85		| 12
-One-sided	| -82		| 135	| 17 	| 1.8 		| 2.2 		| 0			| 31		| 12
+One-sided	| -90		| 135	| 17 	| 1.8 		| 2.2 		| 0			| 31		| 12
 Leaf		| -82		| 155	| 10 	| 1.8 		| 2.2 		| 15 		| 65		| 16
 Shoot		| -95		| 150 	| 12 	| 1.8 		| 0.1 		| 30 		| 0 		| 16
 Lucky Bamboo| -95		| 150 	| 12 	| 1.8 		| 0.25 		| 30 		| 0 		| 16
@@ -33,14 +33,11 @@ Try it out [here](http://yodertv.github.io/).
 - Note tumbleweed tree in docs
 - Can it be recreated? Treat angles delta as string concat rather than addition.
 - Updated length input for more granularity.
-- Worked hard at using a loop to create watches on my treeVars collection. Switched from array to collection and discovered that the order of a collection is not defined. Never noticed this before. Do I care about the order of the sliders? If I do I'll need to go back to an array.
+- Worked hard at using a loop to create watches on my treeVars collection. Switched from array to collection and discovered that the order of a collection is not defined. Never noticed this before. Do I care about the order of the sliders? In the end I switched back to an array.
 - Created the slider list watches with and angular.forEach. Now I can extend the variables at will.
 - Add clear and redraw to slider value set event. Still considering if this is a good feature. So I ...
 - added a toggle switch to control dynamic re-draw on slider change vs. manual clear + draw. Clear and draw are not toggled so that the same tree can be redrawn.
 - Added default list, but sliders are not updating. The tree is drawn as expected.
-
-##Bugs:
-1 - Adding checkbox input pushed the title to the next line. Originally title and menu on the same page.
 
 ##Backlog:
 - Add seperate left and right Alpha variable for each of angle, width, and length. This allows goofy tree by input.

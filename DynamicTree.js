@@ -50,12 +50,12 @@ function TreeCtrl($scope){
 		{name:"Bronchial", lean:"-90", tLength:"90", tWidth:"10", leftAlpha:"300", rightAlpha:"300", leftAngle:"33", rightAngle:"33", level:"10"},
 		{name:"Shoot", lean:"-82", tLength:"180", tWidth:"12", leftAlpha:"180", rightAlpha:"10", leftAngle:"30", rightAngle:"0", level:"12"},
 		{name:"Tree with foilage", lean:"-85", tLength:"135", tWidth:"17", leftAlpha:"180", rightAlpha:"220", leftAngle:"19", rightAngle:"31", level:"16"},// Initial default
-		{name:"Symetrical", lean:"-90", tLength:"180", tWidth:"17", leftAlpha:"180", rightAlpha:"180", leftAngle:"22", rightAngle:"22", level:"9"},
+		{name:"Symetrical", lean:"-90", tLength:"180", tWidth:"26", leftAlpha:"180", rightAlpha:"180", leftAngle:"22", rightAngle:"22", level:"9"},
 		{name:"Lucky bamboo", lean:"-75", tLength:"150", tWidth:"30", leftAlpha:"180", rightAlpha:"25", leftAngle:"15", rightAngle:"80", level:"16"},
 		{name:"Goofy", lean:"-90", tLength:"236", tWidth:"36", leftAlpha:"120", rightAlpha:"240", leftAngle:"48", rightAngle:"85", level:"12"}, // and set rightLengthFactor to equal the left
 		{name:"Leaf", lean:"-82", tLength:"155", tWidth:"10", leftAlpha:"180", rightAlpha:"220", leftAngle:"15", rightAngle:"65", level:"16"}, // and set rightLengthFactor to equal the left
 		{name:"Middle of the Road", lean:"-90", tLength:"125", tWidth:"50", leftAlpha:"300", rightAlpha:"300", leftAngle:"46", rightAngle:"46", level:"9"}, // and set rightLengthFactor to equal the left
-		{name:"One-sided", lean:"-82", tLength:"135", tWidth:"17", leftAlpha:"180", rightAlpha:"220", leftAngle:"0", rightAngle:"31", level:"12"}
+		{name:"One-sided", lean:"-90", tLength:"135", tWidth:"17", leftAlpha:"180", rightAlpha:"220", leftAngle:"0", rightAngle:"31", level:"12"}
 		];
 
 /*
