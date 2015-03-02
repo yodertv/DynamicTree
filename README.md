@@ -34,23 +34,24 @@ Try it out [here](http://yodertv.github.io/).
 - Can it be recreated? Treat angles delta as string concat rather than addition.
 - Updated length input for more granularity.
 - Worked hard at using a loop to create watches on my treeVars collection. Switched from array to collection and discovered that the order of a collection is not defined. Never noticed this before. Do I care about the order of the sliders? In the end I switched back to an array.
+- Switch back to an array to enforce the variables order
 - Created the slider list watches with and angular.forEach. Now I can extend the variables at will.
 - Add clear and redraw to slider value set event. Still considering if this is a good feature. So I ...
 - added a toggle switch to control dynamic re-draw on slider change vs. manual clear + draw. Clear and draw are not toggled so that the same tree can be redrawn.
 - Added default list, but sliders are not updating. The tree is drawn as expected.
+- Dynamically clear and draw trees. E.g., add clear and redraw to slider value set event
+- toggle switch to control dynamic re-draw vs. clear + draw
+- Add seperate left and right Alpha variable for each of angle, width, and length. This allows goofy tree by input.
+- Deploy to web
+- A way to set variables to catalog trees
 
 ##Backlog:
-- Add seperate left and right Alpha variable for each of angle, width, and length. This allows goofy tree by input.
-- Save as button to export tree
+- Save button to export tree
 - Works on mobile browser
-- Package and deliver by email manual activation.
-- Deploy to web
 - Make canvas size dynamic to window size
-- Switch back to an array to enforce the variables order
-- A way to set variables to catalog trees
- 
 
 ##Notes for Release 1.4
+- Add seperate left and right Alpha variable for each of angle, width, and length. This allows goofy tree by input.
 - Note tumbleweed tree in docs
 - Can it be recreated? Treat angles delta as string concat rather than addition.
 - Updated length input for more granularity.
@@ -79,16 +80,3 @@ Try it out [here](http://yodertv.github.io/).
 - Draw trees based on Fractal book algorithms
 - Added input
 - Comments contain named catalog of interesting tree settings.
-
-##Backlog:
-
-- Dynamically clear and draw trees. E.g., add clear and redraw to slider value set event
-- toggle switch to control dynamic re-draw vs. clear + draw
-- Use ng-slider for variable input
-- Add seperate left and right Alpha variable for each of angle, width, and length. This allows goofy tree by input.
-- Save as button to export tree image
-- Work on mobile browser
-- Package and deliver by email
-- Add seperate left and right Alpha variable for each of angle, width, and length. This allows goofy tree by input.
-- Package and deliver by email manual activation.
-- Make canvas size dynamic to window size
