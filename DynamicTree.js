@@ -27,20 +27,6 @@ function TreeCtrl($scope){
 
 	$scope.autoDraw = true;
 
-/*
-	// Collection version of tree variables (javascrip doesn't preseve order in a collection)
-	$scope.treeVars = {
-		"lean" : { value: "-82", options : { from: -180, to: 0, step: 2, dimension: " Lean" }}, // Initial angle of the trunk
-		"leftAlpha" : { value: "180", options : { from: 5, to: 595, step: 5, dimension: " LeftAlpha" }}, // change ratio for leftside of tree
-		"rightAlpha" : { value: "220", options : { from: 5, to: 595, step: 5, dimension: " RightAlpha" }}, // change ratio for leftside of tree
-		"leftAngle" : { value: "19", options : { from: 5, to: 90, step: 2, dimension: " LeftAngle" }}, // Left branch angle delta
-		"rightAngle" : { value: "31", options : { from: 0, to: 90, step: 2, dimension: " RightAngle" }}, // Right branch angle delta
-		"tLength" : { value: "135", options : { from: 0, to: 250, step: 5, dimension: " Length" }}, // Length of the first stem
-		"tWidth" : { value: "17", options : { from: 0, to: 76, step: 2, dimension: " Width" }}, // Width of the first stem
-		"level" : { value: "16", options : { from: 1, to: 18, step: 1, dimension: " Level" }} // Level of recursion
-	};
-*/
-
 	console.log($scope.treeVars);
 
 	//  Here are some examples of interesting inputs
