@@ -3,7 +3,7 @@ Dynamic Tree
 
 Credit to Roger T. Stevens "Fractal Programming in C", 1989 M&T Books, Redwood City, CA.
 
-[DynamicTree](http://yodertv.github.io/) draws and clears a fractal based tree on a canvas as configured by 8 variables that can be input using sliders.
+[DynamicTree](http://yodertv.github.io/DynamicTree.html) draws and clears a fractal based tree on a canvas as configured by 8 variables that can be input using sliders.
 
 Uses angularjs and ng-slider.
 
