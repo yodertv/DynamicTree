@@ -27,7 +27,7 @@ Lucky Bamboo| -95		| 150 	| 12 	| 1.8 		| 0.25 		| 30 		| 0 		| 16
 *and set rightLengthFactor equal to the leftAlpha
 
 ##Demo
-Try it out [here](http://yodertv.github.io/).
+Try it out [here](http://yodertv.github.io/DynamicTree.html).
 
 ##Notes for Release 1.4
 - Note tumbleweed tree in docs
