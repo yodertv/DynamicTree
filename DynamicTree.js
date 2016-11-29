@@ -50,9 +50,6 @@ function TreeCtrl($scope){
 	*/
 
 	var deg_to_rad = Math.PI / 180.0;
-	
-	var repeatCounter = 0; // Used for drawing multiple trees on the same canvas.
-	
 	var timerId1 = undefined;
 	var timerId2 = undefined;
 	var timerId3 = undefined;
@@ -117,21 +114,19 @@ function TreeCtrl($scope){
 //			drawTree(x2, y2, width*leftWidthFactor, length*leftLengthFactor, angle - $scope.treeVars.leftAngle, level - 1);
 //			drawTree(x2, y2, width*rightWidthFactor, length*rightLengthFactor, angle + $scope.treeVars.rightAngle, level - 1);
 		}
+		else {
+			drawing = false;
+		}
 	}
 
 	$scope.makeTree = function() {
 
+		if (drawing) return;
 		drawing = true;	
 		calcFactors();
 		console.log("make", lean, angle, length, width, leftAlpha, rightAlpha, leftAngle, rightAngle, level);
-		drawTree(400, 800+(10*repeatCounter), width, length, lean, level);
+		drawTree(400, 800, width, length, lean, level);
 		timerId3 = setTimeout($scope.makeTree, 800);
-		repeatCounter++;
-		if (repeatCounter>0) { 
-			// drawing = false;
-			clearTimeout(timerId3)
-			repeatCounter = 0;
-		};
 	}
 
 	$scope.clearTree = function() {
@@ -170,10 +165,11 @@ function TreeCtrl($scope){
 	// Notice I'm building the ng expresion by string concatination.
 	angular.forEach($scope.treeVars, function(value,key) {
 	  	$scope.$watch('treeVars['+key+'].value' , function(newVal, oldVal) {
+    	 	// console.log(key + ' has changed from ' + oldVal + ' to ' + newVal);
+  			// console.log($scope.autoDraw, drawing);
   			if ((newVal !== oldVal) && $scope.autoDraw && !drawing) {
   				$scope.clearTree();
   				$scope.makeTree();
-	    	 	// console.log(key + ' has changed from ' + oldVal + ' to ' + newVal);
 			}
 	 	});
 	});
