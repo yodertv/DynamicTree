@@ -44,9 +44,9 @@ function TreeCtrl($scope){
 		{name:"One-sided", lean:"-90", tLength:"135", tWidth:"17", leftAlpha:"180", rightAlpha:"220", leftAngle:"0", rightAngle:"31", level:"12"}
 		];
 
-/*
-	Tumbleweed			-90				135		17		1.8 		2.2 		19			31			16 // Concate angels as strings to delt instead of math.
-	Middle of the Road	-90				125 	50 		3.0 		3.0 		46 			46 			9  // Middle setting for all treeVars
+	/*
+	Tumbleweed			-90			135		17		1.8 		2.2 		19			31		16 // Concate angels as strings to delt instead of math.
+	Middle of the Road	-90			125 	50 		3.0 		3.0 		46 			46 		9  // Middle setting for all treeVars
 	*/
 
 	var deg_to_rad = Math.PI / 180.0;
@@ -124,7 +124,7 @@ function TreeCtrl($scope){
 		drawing = true;	
 		calcFactors();
 		console.log("make", lean, angle, length, width, leftAlpha, rightAlpha, leftAngle, rightAngle, level);
-		drawTree(550, 800+(10*repeatCounter), width, length, lean, level);
+		drawTree(400, 800+(10*repeatCounter), width, length, lean, level);
 		timerId3 = setTimeout($scope.makeTree, 800);
 		repeatCounter++;
 		if (repeatCounter>0) { 
@@ -166,14 +166,18 @@ function TreeCtrl($scope){
 
 	calcFactors();
 
-	// This works. Notice I'm building the ng expresion by string concatination. This is the array version.
+	// This works to detect a change in values and make a new tree. 
+	// Notice I'm building the ng expresion by string concatination.
 	angular.forEach($scope.treeVars, function(value,key) {
 	  	$scope.$watch('treeVars['+key+'].value' , function(newVal, oldVal) {
-  			if ((newVal !== oldVal) && $scope.autoDraw) {          // Don't start a new drawing while drawing
+  			if ((newVal !== oldVal) && $scope.autoDraw && !drawing) {
   				$scope.clearTree();
   				$scope.makeTree();
 	    	 	// console.log(key + ' has changed from ' + oldVal + ' to ' + newVal);
 			}
 	 	});
 	});
+
+	$scope.makeTree(); // Draw the default tree on start-up
+
 }

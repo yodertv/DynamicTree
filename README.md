@@ -50,6 +50,10 @@ Try it out [here](http://yodertv.github.io/DynamicTree.html).
 - Works on mobile browser
 - Make canvas size dynamic to window size
 
+##Notes for Release 1.5
+- Prevented a new drawing from starting while drawing
+- Draw the default tree on start-up
+
 ##Notes for Release 1.4
 - Add seperate left and right Alpha variable for each of angle, width, and length. This allows goofy tree by input.
 - Note tumbleweed tree in docs
