@@ -20,7 +20,7 @@ function TreeCtrl($scope){
 		{name: "RightAlpha", value: "220", options : { from: 5, to: 595, step: 5, dimension: " RightAlpha"  }}, // change ratio for leftside of tree
 		{name: "LeftAngle", value: "19", options : { from: 5, to: 90, step: 2, dimension: " LeftAngle"  }}, // Left branch angle delta
 		{name: "RightAngle", value: "31", options : { from: 0, to: 90, step: 2, dimension: " RightAngle"  }}, // Right branch angle delta
-		{name: "Level", value: "16", options : { from: 1, to: 18, step: 1, dimension: " Level"  }} // Level of recursion
+		{name: "Level", value: "14", options : { from: 1, to: 18, step: 1, dimension: " Level"  }} // Level of recursion
 	];
 
 	$scope.treeVars = angular.copy(defaultTreeVars);
@@ -35,7 +35,7 @@ function TreeCtrl($scope){
 		{name:"Square", lean:"-90", tLength:"250", tWidth:"35", leftAlpha:"120", rightAlpha:"120", leftAngle:"90", rightAngle:"90", level:"16"},
 		{name:"Bronchial", lean:"-90", tLength:"90", tWidth:"10", leftAlpha:"300", rightAlpha:"300", leftAngle:"33", rightAngle:"33", level:"10"},
 		{name:"Shoot", lean:"-82", tLength:"180", tWidth:"12", leftAlpha:"180", rightAlpha:"10", leftAngle:"30", rightAngle:"0", level:"12"},
-		{name:"Tree with foilage", lean:"-85", tLength:"135", tWidth:"17", leftAlpha:"180", rightAlpha:"220", leftAngle:"19", rightAngle:"31", level:"16"},// Initial default
+		{name:"Tree with foilage", lean:"-85", tLength:"135", tWidth:"17", leftAlpha:"180", rightAlpha:"220", leftAngle:"19", rightAngle:"31", level:"14"},// Initial default
 		{name:"Symetrical", lean:"-90", tLength:"180", tWidth:"26", leftAlpha:"180", rightAlpha:"180", leftAngle:"22", rightAngle:"22", level:"9"},
 		{name:"Lucky bamboo", lean:"-75", tLength:"150", tWidth:"30", leftAlpha:"180", rightAlpha:"25", leftAngle:"15", rightAngle:"80", level:"16"},
 		{name:"Goofy", lean:"-90", tLength:"236", tWidth:"36", leftAlpha:"120", rightAlpha:"240", leftAngle:"48", rightAngle:"85", level:"12"}, // and set rightLengthFactor to equal the left
