@@ -125,7 +125,7 @@ function TreeCtrl($scope){
 		drawing = true;	
 		calcFactors();
 		console.log("make", lean, angle, length, width, leftAlpha, rightAlpha, leftAngle, rightAngle, level);
-		drawTree(400, 800, width, length, lean, level);
+		drawTree(550, 850, width, length, lean, level);
 		timerId3 = setTimeout($scope.makeTree, 800);
 	}
 

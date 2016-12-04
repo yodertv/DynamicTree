@@ -13,6 +13,7 @@
     <script src="DynamicTree.js"></script>
     <script type="text/javascript" src="slider/ng-slider.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slider/css/ng-slider.min.css">
+    <link rel="stylesheet" type="text/css" href="./DynamicTree.css">
 
     <!-- Latest compiled and minified CSS 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -25,8 +26,8 @@
 -->
     <title>DynamicTree v1.5</title>
   </head>
-  <body ng-app="dyTree" ng-controller="TreeCtrl" style="background-color:#B8B894;">
-    <div id="header" style="background-color:#B8B894;">
+  <body ng-app="dyTree" ng-controller="TreeCtrl">
+    <div id="header">
         <span>
           <form ng-submit="makeTree()">
               <input class="btn-primary" type="submit" style="float:left" value="DrawTree">
@@ -38,7 +39,7 @@
               <input class="btn-primary" type="submit" style="float:left" value="AutoDraw">
           </form>
           <input type="checkbox" style="float:left" ng-model="autoDraw"></input>
-          <h1 style="text-align: center; margin-bottom: 0;">DynamicTree v1.5</h1>
+          <h1>DynamicTree v1.5</h1>
         </span>
     </div>
       <!-- For debuging tree functions
@@ -49,15 +50,15 @@
       </div>
       -->
     <div>
-      <div style="width:180px; float:left; background-color:#B8B894;">
-          <div ng-repeat="treeVar in treeVars" style="background-color:#B8B894;">
+      <div id="slider-tool-bar">
+          <div ng-repeat="treeVar in treeVars">
             <br>
             <p>{{treeVar.name}} value is: {{treeVar.value}}</p>
             <input ng-model="treeVar.value"  type="text" id="{{$index}}" slider options="treeVar.options"></input>
           </div>
           <hr style="margin-bottom:10px">
           <p> Load from catalog: </p>
-          <div ng-repeat="tree in treeCatalog" style="background-color:#B8B894;">
+          <div ng-repeat="tree in treeCatalog">
             <form ng-submit="setCurrentTreeVars($index)">
               <input class="btn-primary" type="submit" style="float:left" value="{{tree.name}}">
             </form>
@@ -65,6 +66,6 @@
           <br>
       </div>
     </div>
-    <canvas id="canvas" width="900" height="800" style="margin:8px;"></canvas>  
+    <canvas id="canvas" width="1200" height="1000"></canvas>  
   </body>
 </html>
