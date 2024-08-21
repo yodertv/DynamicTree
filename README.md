@@ -3,7 +3,7 @@ Dynamic Tree
 
 Credit to Roger T. Stevens "Fractal Programming in C", 1989 M&T Books, Redwood City, CA.
 
-[DynamicTree](http://yodertv.github.io/DynamicTree.html) draws and clears a fractal based tree on a canvas as configured by 8 variables that can be input using sliders.
+[DynamicTree](https://dynamic-tree.vercel.app/) draws and clears a fractal based tree on a canvas as configured by 8 variables that can be input using sliders.
 
 Uses angularjs and ng-slider.
 
@@ -27,10 +27,10 @@ Lucky Bamboo| -95		| 150 	| 12 	| 1.8 		| 0.25 		| 30 		| 0 		| 16
 *and set rightLengthFactor equal to the leftAlpha
 
 ##Demo
-Try it out [here](http://yodertv.github.io/DynamicTree.html).
+Try it out [here](https://dynamic-tree.vercel.app/).
 
 ##Notes for Release 1.4
-- Note tumbleweed tree in docs
+- Noted tumbleweed tree in docs.
 - Can it be recreated? Treat angles delta as string concat rather than addition.
 - Updated length input for more granularity.
 - Worked hard at using a loop to create watches on my treeVars collection. Switched from array to collection and discovered that the order of a collection is not defined. Never noticed this before. Do I care about the order of the sliders? In the end I switched back to an array.
