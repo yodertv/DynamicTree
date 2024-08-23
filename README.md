@@ -9,6 +9,11 @@ Uses angularjs and ng-slider.
 
 ![alt text](DynamicTree.png "Dynamic Tree")
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="DynamicTree.png">
+  <img alt="Shows a vector based tree." src="DynamicTree.png">
+</picture>
+
 ##Here are some examples of interesting inputs:
 
 tree		| initAngle	| length| width	| leftAlpha	| rightAlpha| leftAngle	| rightAngle| level
