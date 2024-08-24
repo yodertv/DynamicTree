@@ -7,10 +7,8 @@ Credit to Roger T. Stevens "Fractal Programming in C", 1989 M&T Books, Redwood C
 
 Uses angularjs and ng-slider.
 
-![alt text](DynamicTree.png "Dynamic Tree")
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="DynamicTree.png">
+  <source media="(prefers-color-scheme: dark)" srcset="DynamicTreeWhite.png">
   <img alt="Shows a vector based tree." src="DynamicTree.png">
 </picture>
 
